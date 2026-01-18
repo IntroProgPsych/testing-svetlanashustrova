@@ -15,6 +15,19 @@ class TestIsEven(unittest.TestCase):
     # write your tests here
     pass
 
+class TestIsEven(unittest.TestCase):
+
+    def test_even_positive_number(self):
+        self.assertTrue(is_even(2))
+
+    def test_even_zero(self):
+        self.assertTrue(is_even(0))
+
+    def test_odd_positive_number(self):
+        self.assertFalse(is_even(7))
+
+    def test_even_negative_number(self):
+        self.assertTrue(is_even(-4))
 
 if __name__ == "__main__":
     unittest.main()
